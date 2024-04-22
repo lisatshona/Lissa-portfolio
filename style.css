@@ -1,0 +1,165 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #FDE5EC;
+    color: #000; /* Black text color */
+}
+
+a {
+    color: #000; /* Black text color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+.navbar {
+    background-color: #FFCCCC;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navbar a {
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Homepage Section Styles */
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profile-pic img {
+    width: 700px;
+    border: .2rem solid #793848;
+    border-radius: 50%;
+}
+
+.home-text {
+    text-align: center;
+}
+
+.contact-button,
+.cv-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FEBBCC;
+    color: #fff; /* White text color */
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover,
+.cv-button:hover {
+    background-color: #FFCCCC;
+}
+
+/* Section Heading Styles */
+h1 {
+    color: #000; /* Black text color */
+    font-size: 3rem;
+}
+
+/* About Section Styles */
+#about .content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Education Section Styles */
+#education .content,
+#experience .content,
+#projects .content,
+#contact .content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.container img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.text-box {
+    background-color: #FFEECC;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    width: 300px;
+    position: relative;
+}
+
+.left-container-arrow,
+.right-container-arrow {
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #FFEECC;
+    transform: translateY(-50%);
+}
+
+.right-container-arrow {
+    transform: translateY(-50%) rotate(180deg);
+    left: -15px;
+}
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+/* Footer Styles */
+footer {
+    background-color: #FEBBCC;
+    text-align: center;
+    padding: 20px 0;
+}
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ac012b;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #FFCCCC;
+}
