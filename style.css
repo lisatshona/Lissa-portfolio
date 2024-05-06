@@ -5,7 +5,7 @@ body {
     font-family: 'Space Mono', monospace;
     margin: 0;
     padding: 0;
-    background-color: #FDE5EC;
+    background-color:   #FFCCCC;
     color: #000; /* Black text color */
 }
 
@@ -20,7 +20,7 @@ a:hover {
 
 /* Header Styles */
 .navbar {
-    background-color: #FFCCCC;
+    background-color: #FEBBCC;
     padding: 20px 0;
     text-align: center;
 }
@@ -58,12 +58,13 @@ main {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #FEBBCC;
-    color: #fff; /* White text color */
+    color: black;
     text-transform: uppercase;
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
+  
 
 .contact-button:hover,
 .cv-button:hover {
@@ -90,7 +91,60 @@ h1 {
     text-align: center;
     margin-top: 50px;
 }
-
+#contact .wrapper{
+        position: center; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        max-width: 400px; 
+        width: 70%; 
+        background:#FEBBCC; 
+        padding: 30px; 
+        align-items: center;
+        margin-left: 50%;
+        margin-top: 300px;
+        border-radius: 5px; 
+        box-shadow: 10px 4px 8px
+            #ebb5be; 
+    }
+    
+    .wrapper h2 {
+        text-align: center;
+        margin-bottom: 2px;
+    }
+    
+    .input_field {
+        margin-bottom: 15px;
+    }
+    
+    .input_field input,
+    .input_field textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .btn {
+        text-align: center;
+    }
+    .btn input[type="submit"] {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: black;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    .btn input[type="submit"]:hover {
+        background-color: black;
+    }
+    
+    #error_message {
+        color:black;
+        margin-bottom: 10px;
+    }
+    
 .timeline {
     display: flex;
     flex-direction: column;
@@ -141,6 +195,8 @@ h1 {
     text-decoration: none;
     border-radius: 50%;
   }
+ 
+
 /* Footer Styles */
 footer {
     background-color: #FEBBCC;
