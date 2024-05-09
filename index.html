@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </header>
@@ -27,16 +28,16 @@
         <section id="home">
             <div class="home-content">
               <div class="profile-pic">
-                <img src="lisa.jpg" alt="Profile Picture" />
+                <img src="Images/lisa.jpg" alt="Profile Picture" />
               </div>
               <div class="home-text">
-                <h1>Hi, I'm Lissa</h1>
-                <p>I am a Software Full-Stack Developer Intern</p>
+                <h1><span class="name">Hi, I'm Lissa</span> <span class="surname">Tshona</span></h1>
+                <p class="moving-text"><b>I am a Software Full-Stack Developer</b></p>
                 <p>I am fascinated by the digital world and it's endless possibilities. 
                    I thrive on challenges and deeply passionate about expanding my knowledge and skills in the realm of technology.
                 </p>
                  <a href="#contact" class="contact-button">Contact Me</a>
-                <a href="Lissa Tshona CV"
+                <a href="Lissa Tshona CV.pdf"
                   download="Lissa Tshona CV" class="cv-button">
                   Download My CV
                 </a>
@@ -67,7 +68,7 @@
                   <div class="timeline">
 
                     <div class="container left-container">
-                      <img src="images/White_background.png" alt="Logo">
+                      <img src="Images/Graduation-cap-free-to-use-clip-art.png" alt="Logo">
                       <div class="text-box">
                         <h2>Walter Sisulu University</h2>
                         <small>2018 - 2022</small>
@@ -77,39 +78,72 @@
                     </div>
 
                     <div class="container right-container">
-                      <img src="images/White_background.png" alt="Logo">
+                      <img src="Images/school-books-transparent-17.png" alt="Logo">
                       <div class="text-box">
                         <h2>Ncomani High School</h2>
                         <small>2015-2017</small>
-                        <p>NSC Certificate.</p>
-                        <span class="right-container-arrow"></span>
+                        <p>NSC Certificate </p>
+                        <span class="left-container-arrow"></span>
                       </div>
                     </div>
 
                  </div>
           </section>
 
-          <section id="experience">
+          <section id="skills">
             <div class="content">
-                <div class="text">
-                  <h1><u>Experience</u></h1>
-                  <p>Software Full-stack Development Intern</p>
-                  <small>Jan 2024-July 2025 </small>
-                  <p></p>
+              <div class="skills-container">
+                <h1><u>Skills</u></h1>
+                <div class="icons">
+                    <i class="devicon-cplusplus-plain icon"></i>
+                    <i class="devicon-html5-plain icon"></i>
+                    <i class="devicon-css3-plain icon"></i>
+                    <i class="devicon-java-plain-wordmark icon"></i>
+                    <i class="devicon-javascript-plain icon"></i>
+                    <i class="devicon-nodejs-plain-wordmark icon"></i>
+                    <i class="devicon-react-original icon"></i>
+                    <i class="devicon-python-plain icon"></i>
+                    <i class="devicon-github-original colored icon"></i>
+                    <i class="devicon-mysql-plain-wordmark icon"></i>
                 </div>
-              </div>
+            </div>
           </section>
 
+          <div class="content text">
+            <h1><u>Projects</u></h1>
+          </div>
           <section id="projects">
             <div class="content">
-                <div class="text">
-                  <h1><u>Projects</u></h1>
-                 <p>Website</p>
-                 <p>Chat-App</p>
-                 <p>My Portfolio</p>
+                <div class="project">
+                    <img src="Images/Screenshot (2).png" alt="Project 1">
+                    <div class="text">
+                        <h2><u>Project 1</u></h2>
+                        <a href="file:///C:/Users/Lissa.Tshona/OneDrive%20-%20Cape%20IT%20Initiative/Group_Project/Catering---services_2/index.html">Website</a>
+                    </div>
                 </div>
-              </div>
-          </section>
+                <div class="project">
+                    <img src="Images/screenshot.png" alt="Project 2">
+                    <div class="text">
+                      <h2><u>Project 2</u></h2>
+                      <a href="https://663c94aab538638e7d72da4c--jocular-capybara-b11bd4.netlify.app/">Calculator</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="Images/kush-shot36_4x.png" alt="Project 3">
+                    <div class="text">
+                        <h2><u>Project 3</u></h2>
+                        <a href="#">Chat-App</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="Images/Screenshot (3).png" alt="Project 4">
+                    <div class="text">
+                        <h2><u>Project 4</u></h2>
+                        <a href="https://main--gentle-unicorn-9dbba9.netlify.app/">Landing & Webpage</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
           <section id="contact">
             <div class="content">
@@ -117,8 +151,17 @@
                   <h1><u>Contact</u></h1>
                   <p>Let me build you a Beautiful Website 😊</p>
                 </div>
+                <div class="contact-in">
+                  <h2>Phone</h2>
+                  <p>081 325 3389/ 060 309 2287</p>
+                  <h2>Email</h2>
+                  <p>lisatshona98@gmail.com</p>
+                  <h2>Address</h2>
+                  <p>52 Duncan Street, Parow</p>
+                </div>
+
                 <div class="wrapper"> 
-                  <h2>Contact me </h2> 
+                  <h2>Lets Connect</h2> 
                   <div id="error_message"></div> 
           
                   <form action="" id="myform" onsubmit="return validate();"> 
@@ -141,29 +184,18 @@
                       </div> 
                   </form> 
               </div> 
-
-
+              <div class="socials">
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="https://github.com/lisatshona" class="fa fa-github"></a>
                 <a href="https://www.linkedin.com/in/lissa-tshona-6ba46625b/" class="fa fa-linkedin"></a>
               </div>
+              </div>
           </section>
     </main>
-
     <footer>
         <p>
             &copy; 2024 Lissa
         </p>
     </footer>
-    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">Top</button>
-
-    <script>
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-    </script>
 </body>
 </html>

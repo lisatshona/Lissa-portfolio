@@ -8,19 +8,12 @@ function scrollFunction() {
     }
 }
 
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-}
-
 document.getElementById("downloadButton").addEventListener("click", function() {
-    // Replace 'path_to_your_cv.pdf' with the actual path to your CV file
-    var cvPath = 'CV_202404151040506.pdf';
+    // function to download cv
+    var cvPath = 'Lissa Tshona CV.pdf';
     var link = document.createElement("a");
     link.href = cvPath;
-    link.download = "Your_CV_Name.pdf";
+    link.download = "Lissa Tshona CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
