@@ -99,6 +99,11 @@ h1 {
     text-align: center;
     margin-top: 50px;
 }
+.portfolio p{
+    margin: 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
 
 /* Education Section Styles */
 #education .content,
