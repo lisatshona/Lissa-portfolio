@@ -90,7 +90,7 @@ main {
 
 /* Section Heading Styles */
 h1 {
-    color: #000; /* Black text color */
+    color: #000; 
     font-size: 3rem;
 }
 
@@ -277,22 +277,6 @@ h1 {
     position: relative;
 }
 
-.left-container-arrow,
-.right-container-arrow {
-    position: absolute;
-    top: 50%;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 0 10px 15px;
-    border-color: transparent transparent transparent #008888;
-    transform: translateY(-50%);
-}
-
-.right-container-arrow {
-    transform: translateY(-50%) rotate(180deg);
-    left: -15px;
-}
 .fa {
     padding: 20px;
     font-size: 20px;
@@ -338,6 +322,7 @@ p {
 
 #projects {
     display: inline-flex;
+    padding: 20px;
 }
 
 .content {
@@ -349,7 +334,7 @@ p {
 .project {
     margin: 20px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 5px;
 }
 
@@ -363,6 +348,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 20px;
 }
 
 .project {
@@ -389,11 +375,16 @@ p {
     transition: transform 0.3s ease;
     transform: translateY(100%);
 }
-
+.project p{
+    font-size: 14px;
+}
 .project:hover .description {
     transform: translateY(0);
 }
-
+.project a{
+    text-decoration: none;
+    color: inherit;
+}
 .project:hover img {
     transform: scale(1.1);
 }
