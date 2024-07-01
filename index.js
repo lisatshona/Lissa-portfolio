@@ -19,25 +19,6 @@ document.getElementById("downloadButton").addEventListener("click", function() {
     document.body.removeChild(link);
 });
 
-function validateForm() {
-    const form = document.getElementById('contactForm');
-    const fullName = form['fullName'].value.trim();
-    const email = form['email'].value.trim();
-    const message = form['message'].value.trim();
-
-    if (fullName === '' || email === '' || message === '') {
-      alert('All fields are required.');
-      return false;
-    }
-
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
-      alert('Please enter a valid email address.');
-      return false;
-    }
-
-    return true;
-  }
 
 function zoomIn(element) {
     element.style.transform = "scale(1.1)";
