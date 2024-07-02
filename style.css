@@ -295,7 +295,7 @@ h1 {
 
 .service {
     background-color:#20B2AA;
-    border: 1px solid #ddd;
+    border: 1px solid black;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 10px;
@@ -322,7 +322,7 @@ p {
 
 #projects {
     display: inline-flex;
-    padding: 20px;
+    padding: 60px;
 }
 
 .content {
@@ -330,65 +330,60 @@ p {
     justify-content: center;
     flex-wrap: wrap;
 }
-
-.project {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-.project img {
-    width: 200px; 
-    height: 220px; 
-    display: block;
-    margin: 0 auto;
-}
 .containee {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 10px;
 }
-
-.project {
-    width: calc(33.33% - 20px);
-    margin-bottom: 20px;
-    position: relative;
-    overflow: hidden;
-}
-
-.project img {
-    width: 100%;
-    transition: transform 0.3s ease;
-}
-
-.project .description {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-color: #20B2AA;
-    padding: 10px;
-    box-sizing: border-box;
-    color: #fff;
-    transition: transform 0.3s ease;
-    transform: translateY(100%);
-}
-.project p{
-    font-size: 14px;
-}
-.project:hover .description {
-    transform: translateY(0);
-}
-.project a{
-    text-decoration: none;
-    color: inherit;
-}
-.project:hover img {
-    transform: scale(1.1);
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
+.row img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.layer {
+    text-align: center;
+    padding: 10px;
+}
+
+.layer p {
+    color: black;
+    font-size: 1rem;
+    text-justify: inter-word;
+}
+
+.layer a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #20B2AA;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.layer a:hover {
+    background-color: black;
+}
+
+.layer icon {
+    font-size: 1.2em;
+    margin-left: 5px;
+}
 .socials {
     text-align: center;
 }
