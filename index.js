@@ -27,3 +27,20 @@ function zoomIn(element) {
 function zoomOut(element) {
     element.style.transform = "scale(1)";
 }
+// Add this to your index.js file
+
+document.addEventListener("DOMContentLoaded", () => {
+    const portfolioItems = document.querySelectorAll(".row");
+
+    portfolioItems.forEach(item => {
+        const layer = item.querySelector(".layer");
+
+        item.addEventListener("mouseenter", () => {
+            layer.style.opacity = "1";
+        });
+
+        item.addEventListener("mouseleave", () => {
+            layer.style.opacity = "0";
+        });
+    });
+});
